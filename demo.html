@@ -31,11 +31,12 @@
     <script type="module">
       import { Chessground } from './dist/chessground.js';
 
-      Chessground(document.getElementById('board-1'), {});
+      Chessground(document.getElementById('board-1'), {draggable: false,});
       Chessground(document.getElementById('board-2'), {
-        fen: 'r2q2k1/1p6/p2p4/2pN1rp1/N1Pb2Q1/8/PP1B4/R6K b - - 2 25',
+        fen: 'r2q2k1/1p6/p2p4/2pN1rp1/N1Pb2Q1/8/PP1B4/R6K b - - 2 25', draggable: false,
       });
       Chessground(document.getElementById('board-3'), {
+        draggable: false,
         drawable: {
           autoShapes: [
             {
